@@ -1,29 +1,16 @@
 ---
+layout: default
+title: "GitHub-hosted Blog Example"
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
+🚧 This page will demonstrate how to host a blog or other semi-dynamic content on GitHub.
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>GitHub-hosted Blog Example</title>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
-</head>
-<body>
-
-<header>
-<h1>GitHub-hosted Blog Example
-</header>
-
-<p>🚧 This page will demonstrate how to host a blog or other semi-dynamic content on GitHub.</p>
-
-<footer>
-<a href="https://github.com/penguineer/gh-blog">Find me on GitHub.</a>
-</footer>
-
-</body>
-</html>
+{% for post in site.posts limit:10 %}
+<h2 {% if forloop.first == false %}class="index-followup"{% endif %}><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+{% include postmeta.html date=post.date author=post.author.display_name %}
+{% if forloop.first == true %}
+{{ post.content }}
+{% else %}
+{{ post.excerpt }}
+{% endif %}
+<p class="followup"><a href="{{ site.url }}{{ post.url }}"><span>Go to <em>{{ post.title }}</em></span></a></p>
+{% endfor %}
