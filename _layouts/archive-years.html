@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h2>Archive {{ page.title }}</span></h2>
+
+{% for post in site.posts %}
+{% assign postyear = post.date | date: "%Y" %}
+{% if postyear == page.year %}
+  <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+  {% include postmeta.html date=post.date author=post.author.display_name %}
+  {{ post.excerpt }}
+  <p class="followup"><a href="{{ site.url }}{{ post.url }}"><span>To <em>{{ post.title }}</em></span></a></p>
+{% endif %}
+{% endfor %}
