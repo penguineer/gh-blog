@@ -34,3 +34,9 @@ defaults:
         author:
             display_name: "Stefan Haun"
         commenting: 'closed'
+
+# Archives
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
