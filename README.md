@@ -11,3 +11,7 @@ docker-compose up
 Access the website as http://127.0.0.1:4000
 
 When you are done, do not forget to remove the deployment with `docker-compose down`.
+
+## License
+
+[MIT](LICENSE.txt) © 2023 Stefan Haun and contributors
