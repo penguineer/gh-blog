@@ -22,3 +22,6 @@ exclude:
   - CNAME
   - docker-compose.yml
   - Gemfile
+
+# An empty array is needed for some functions
+emptyArray: []
