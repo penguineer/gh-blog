@@ -1,0 +1,13 @@
+<div class="postnav">
+<span class="prev">
+{% if page.previous %}
+<a href="{{ site.url }}{{ page.previous.url }}">Previous Post</a>
+{% endif %}
+</span>
+<span class="up"><a href="{{ site.url }}">Up</a></span>
+<span class="next">
+{% if page.next %}
+<a href="{{ site.url }}{{ page.next.url }}">Next Post</a>
+{% endif %}
+</span>
+</div>
