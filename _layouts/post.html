@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include postnav.html %}
+
+<h2>{{ page.title }}</h2>
+
+{% include postmeta.html date=page.date author=page.author.display_name %}
+
+{{ content }}
+
+{% include postnav.html %}
