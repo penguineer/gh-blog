@@ -25,3 +25,12 @@ exclude:
 
 # An empty array is needed for some functions
 emptyArray: []
+
+defaults:
+    - scope:
+        path: ""
+        type: "posts"
+      values:
+        author:
+            display_name: "Stefan Haun"
+        commenting: 'closed'
