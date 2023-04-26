@@ -1,0 +1,24 @@
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Build settings
+compress-site: yes
+
+encoding: "utf-8"
+compress_html: # - http://jch.penibelst.de/
+  clippings: all
+  ignore:
+    envs: development
+
+# Development Settings
+port: 4000
+host: 127.0.0.1
+safe: false
+
+exclude:
+  - README.md
+  - CNAME
+  - docker-compose.yml
+  - Gemfile
