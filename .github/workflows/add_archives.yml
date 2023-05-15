@@ -12,6 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      # https://github.com/kannansuresh/jekyll-blog-archive-workflow/issues/7
+      # Remove when this is fixed
+      - name: Make sure the archive directories exist
+        run: |
+          mkdir -p _archives/categories
+          mkdir -p _archives/tags
+          mkdir -p _archives/years
+
       - name: Jekyll Blog Archive
         uses: kannansuresh/jekyll-blog-archive-workflow@v1.0.3
         with:
