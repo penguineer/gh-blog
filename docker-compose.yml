@@ -1,7 +1,7 @@
 version: "2"
 services:
   jekyll:
-      image: jekyll/jekyll:3.8
+      image: jekyll/jekyll:4
       command: jekyll serve -l
       ports:
           - 4000:4000
