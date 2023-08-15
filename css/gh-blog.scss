@@ -1,0 +1,69 @@
+---
+# Github Blog Example CSS
+---
+
+:root {
+  --base-color: black;
+  --accent-color: #fdff00ff;
+}
+
+body {
+  background: white;
+  overflow-y: scroll;
+}
+
+header {
+  border-bottom: 5px solid black;
+  margin-right: 0em;
+  margin-left: 0em;
+  margin-bottom: 0.5em;
+  background-image: url("/assets/logo.png") , url("/assets/header.png");
+  background-repeat: no-repeat;
+  background-position: 20px,0 center;
+  text-align: left;
+  min-height: 160px;
+}
+
+header a {
+  display: block;
+  width: 100%;
+  height: 160px;
+}
+
+header h1 {
+  display: none;
+}
+
+div.content {
+  background: white;
+  width: 100%;
+}
+
+div.content p {
+  text-align: justify;
+}
+
+footer nav {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    #navbar a.button {
+      display: block;
+    }
+
+    footer,
+    footer nav {
+        text-align: center;
+    }
+
+    header {
+      background-position: center center;
+    }
+}
+
+@media (max-width: 550px) {
+    #navbar img {
+      display: none;
+    }
+}
