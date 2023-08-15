@@ -1,0 +1,57 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="{{ site.baseurl }}/css/font.css" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{{ site.url }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/skeleton.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/gh-blog.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/x-icon" href="{{ site.url }}/assets/favicon.png">
+
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="row">
+    <div class="column">
+
+    <a href="{{ site.baseurl }}/"><h1>GitHub-hosted Blog Example</h1></a>
+    </div>
+</div>
+</header>
+
+{{ content }}
+
+<footer>
+<div class="row">
+    <div class="twelve columns">
+      <span><a href="https://github.com/penguineer/gh-blog">Find me on GitHub.</a></span>
+    </div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
